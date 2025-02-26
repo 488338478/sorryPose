@@ -13,6 +13,7 @@ public class enemyLogic : MonoBehaviour
     public Sprite[] newSprites;
     public enum Power { friend,workmate,leader,boss}
     public Power power;
+
     // Start is called before the first frame update
     void Start()
     {//生成上司时随机决定其身份
