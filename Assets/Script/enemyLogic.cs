@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+//thi
 public class enemyLogic : MonoBehaviour
 {
     public MakePose makePose;
