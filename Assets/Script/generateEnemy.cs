@@ -67,7 +67,7 @@ public class GenerateEnemy : MonoBehaviour
         if (a == sl && !enemyList.IsUnityNull())
         {
             score += 10;
-            a = Random.Range(1, 4);
+            a = Random.Range(1, 5);
             Debug.Log(a);
             Debug.Log($"您的得分是：{score}");
             Debug.Log($"您的血量是:{health}");
