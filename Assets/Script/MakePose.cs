@@ -7,7 +7,9 @@ using UnityEngine;
 
 public class MakePose : MonoBehaviour
 {
+    public float speed;
     public float rotationSpeed = 50f; // 旋转速度
+    public float backSpeed = 50f;//返回速度
     private float targetRotation = 0f; // 目标旋转角度
     private float currentRotation = 0f; // 当前旋转角度
 
@@ -31,10 +33,12 @@ public class MakePose : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             targetRotation = 180f; // 如果按下空格，目标旋转角度是 180 度
+            speed = rotationSpeed;
         }
         else
         {
             targetRotation = 0f; // 松开空格时，目标旋转角度回到 0
+            speed = backSpeed;
 
         }
         if (Input.GetKeyUp(KeyCode.Space))
@@ -49,11 +53,11 @@ public class MakePose : MonoBehaviour
                     sl = sorryList.sorry2;
                     posed.Invoke((int)sl);
                     Debug.Log("本当にすみません"); break;
-                case float n when (n > 90 && n < 120):
+                case float n when (n > 90 && n < 135):
                     sl = sorryList.sorry3;
                     posed.Invoke((int)sl);
                     Debug.Log("申し訳ありません"); break;
-                case float n when (n > 120 && n < 150):
+                case float n when (n > 135 && n < 180):
                     sl = sorryList.sorry4;
                     posed.Invoke((int)sl);
                     Debug.Log("申し訳ございません"); break;
@@ -63,15 +67,10 @@ public class MakePose : MonoBehaviour
         }
 
         // 平滑旋转物体
-        currentRotation = Mathf.Lerp(currentRotation, targetRotation, Time.deltaTime * rotationSpeed);
+        currentRotation = Mathf.Lerp(currentRotation, targetRotation, Time.deltaTime * speed);
 
         // 应用旋转到物体
         transform.rotation = Quaternion.Euler(0, 0, -currentRotation);
-
-
-
-
         }
 
-    
 }

@@ -1025,8 +1025,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 865f61d9a235b4b47bdd24efaa5a2cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  howangry: {fileID: 0}
-  n: {fileID: 1031098500}
 --- !u!4 &1648929992
 Transform:
   m_ObjectHideFlags: 0
@@ -1245,6 +1243,10 @@ PrefabInstance:
     - target: {fileID: 355918052139102109, guid: d1d2d3a76f45c864dba425660a0d194e, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 646186518243232797, guid: d1d2d3a76f45c864dba425660a0d194e, type: 3}
+      propertyPath: backSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2801989181318266975, guid: d1d2d3a76f45c864dba425660a0d194e, type: 3}
       propertyPath: m_Name
