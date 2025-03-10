@@ -232,10 +232,12 @@ MonoBehaviour:
   makePose: {fileID: 0}
   sl: 0
   n: {fileID: 1031098500}
+  r: {fileID: 1031098500}
   Sprite1: {fileID: 21300000, guid: 5220ee3ee854adf4a96789ac3bcf8469, type: 3}
   Sprite2: {fileID: 21300000, guid: 844172c80bbd7584985d458556a42572, type: 3}
   Sprite3: {fileID: 21300000, guid: 4942610b95dec164db010a1421b0f9b0, type: 3}
   Sprite4: {fileID: 21300000, guid: 231fc950f7c7e3d46990cca80e7ecd4f, type: 3}
+  Sprite5: {fileID: 21300000, guid: 4942610b95dec164db010a1421b0f9b0, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 0
+  r: 0
 --- !u!1 &1157580032
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,10 +807,12 @@ MonoBehaviour:
   makePose: {fileID: 0}
   sl: 0
   n: {fileID: 1031098500}
+  r: {fileID: 1031098500}
   Sprite1: {fileID: 4025842276223021771, guid: 8e8466f931f66994e9f9afd8578d33f1, type: 3}
   Sprite2: {fileID: 4025842276223021771, guid: 8e8466f931f66994e9f9afd8578d33f1, type: 3}
   Sprite3: {fileID: -4157886436388895521, guid: 92e4c6cadca2a3d4d81145723cbc8e17, type: 3}
   Sprite4: {fileID: -2246267039535821428, guid: 3b1c537588c74f3478879d7d91c696d1, type: 3}
+  Sprite5: {fileID: -2246267039535821428, guid: 3b1c537588c74f3478879d7d91c696d1, type: 3}
 --- !u!4 &1615340758
 Transform:
   m_ObjectHideFlags: 0
@@ -928,10 +933,15 @@ MonoBehaviour:
   heart2: {fileID: 1157580032}
   heart3: {fileID: 891219721}
   n: {fileID: 1031098500}
+  r: {fileID: 1031098500}
   Sprite1: {fileID: 5744780374460999365, guid: fdb1cc2c3541cfc419672ab1bfd8b2d2, type: 3}
   Sprite2: {fileID: 3832503875003733931, guid: fb6238d4a06304347b1ac9a05b64bf10, type: 3}
   Sprite3: {fileID: 3676510476207127891, guid: a85a11d3917804f4aaf2d9323c933e4a, type: 3}
   Sprite4: {fileID: 2168423810454027315, guid: d4032a0262f660a49b80237a64daf5b0, type: 3}
+  Sprite5: {fileID: 0}
+  Sprite6: {fileID: 0}
+  Sprite7: {fileID: 0}
+  Sprite8: {fileID: 0}
 --- !u!1 &1648929990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,9 +1285,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1031098500}
     - target: {fileID: 74146206527126903, guid: d1d2d3a76f45c864dba425660a0d194e, type: 3}
+      propertyPath: r
+      value: 
+      objectReference: {fileID: 1031098500}
+    - target: {fileID: 74146206527126903, guid: d1d2d3a76f45c864dba425660a0d194e, type: 3}
       propertyPath: Sprite4
       value: 
       objectReference: {fileID: -177592079434075622, guid: f4de5c9b240adc14893ae76c316d8269, type: 3}
+    - target: {fileID: 74146206527126903, guid: d1d2d3a76f45c864dba425660a0d194e, type: 3}
+      propertyPath: Sprite5
+      value: 
+      objectReference: {fileID: 5979429021883868845, guid: 0fda1a68ebde05c4cbd6cde29d8e2fbf, type: 3}
     - target: {fileID: 74146206527126903, guid: d1d2d3a76f45c864dba425660a0d194e, type: 3}
       propertyPath: makePose
       value: 
@@ -1375,10 +1393,15 @@ MonoBehaviour:
   makePose: {fileID: 0}
   sl: 0
   n: {fileID: 1031098500}
+  r: {fileID: 1031098500}
   Sprite1: {fileID: 21300000, guid: c9ad3bedd924d4d4dbb18d06ef660cbb, type: 3}
   Sprite2: {fileID: 21300000, guid: 6b13a8538baccab4a8b94aa22606da06, type: 3}
   Sprite3: {fileID: 21300000, guid: da2d1c56d7a033b468a3ac1929f95b36, type: 3}
   Sprite4: {fileID: 21300000, guid: 0b4b6702d32fe6e4f84e6b6365ef6dd8, type: 3}
+  Sprite5: {fileID: 21300000, guid: e61cb0abb53738f419a64d2e8cc94fef, type: 3}
+  Sprite6: {fileID: 21300000, guid: a3e809c4e5c6f4f4a86e03f12925b3fd, type: 3}
+  Sprite7: {fileID: 21300000, guid: b97b4d51f1cb99f41ac87ea6ea1c1b03, type: 3}
+  Sprite8: {fileID: 21300000, guid: 0f394654d4609ed458fa623a7c49f77f, type: 3}
 --- !u!4 &3149690371504905231
 Transform:
   m_ObjectHideFlags: 0

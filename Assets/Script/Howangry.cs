@@ -13,8 +13,6 @@ public class Howangry : MonoBehaviour
     public TextMeshProUGUI howangry;
     public Num n;
 
-  
-
     private void Start()
     {
 
