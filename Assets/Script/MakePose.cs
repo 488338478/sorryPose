@@ -13,7 +13,7 @@ public class MakePose : MonoBehaviour
 
     public delegate bool OnSpaced(int a);//委托
     public static event OnSpaced posed;//事件
-    public enum sorryList { sorry0 , sorry1, sorry2 , sorry3 , sorry4  };//枚举每种道歉状态
+    public enum sorryList {  sorry0, sorry1, sorry2 , sorry3 , sorry4  };//枚举每种道歉状态
     Queue<sorryList> order;
     public sorryList sl;
     // Start is called before the first frame update
@@ -41,16 +41,11 @@ public class MakePose : MonoBehaviour
         {
             switch (360 - transform.localEulerAngles.z)
             {
-                case float n when (n > 0 && n < 30):
-                    Debug.Log("ごめんなさい");
-                    sl = sorryList.sorry0;
-                    posed.Invoke((int)sl);
-                    break;
-                case float n when (n > 30 && n < 60):
+                case float n when (n > 0 && n < 45):
                     sl = sorryList.sorry1;
                     posed.Invoke((int)sl);
                     Debug.Log("すみません"); break;
-                case float n when (n > 60 && n < 90):
+                case float n when (n > 45 && n < 90):
                     sl = sorryList.sorry2;
                     posed.Invoke((int)sl);
                     Debug.Log("本当にすみません"); break;
