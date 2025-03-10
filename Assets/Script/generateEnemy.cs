@@ -45,12 +45,8 @@ public class GenerateEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-      
-
+       
     }
-
-  
 
     bool KillEnemy(int sl)
     {
@@ -125,7 +121,7 @@ public class GenerateEnemy : MonoBehaviour
         if (health <= 0)
         {
             health = 3;
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
             
         }
     

@@ -29,7 +29,7 @@ public class Timer : MonoBehaviour
         {
             isTimeOut = true;
             timerText.text = "0.0";//显示0.0，不再继续计时
-            SceneManager.LoadScene(3);//跳转到结束场景
+            SceneManager.LoadScene(4);//跳转到结束场景
         }
     }
 

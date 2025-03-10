@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using static EnemyLogic;
 
-
-
 public class Rand : MonoBehaviour
 {
     // Start is called before the first frame update
