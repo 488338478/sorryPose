@@ -2,4 +2,28 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/Assets/Script/EnemyLogic.cs
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Tt]arget/
+[Aa]ssets/Plugins/Editor/
+sysinfo.txt
+
+# User-specific files
+[Dd]ebug/
+[Dd]ebugFile/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Unity3D generated file on Windows
+[Tt]humbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+
+# Windows Installer Patch files
+*.msp
