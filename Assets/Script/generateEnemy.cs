@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Unity.VisualScripting;
-using Unity.VisualScripting.Dependencies.Sqlite;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -52,7 +52,7 @@ public class GenerateEnemy : MonoBehaviour
     {
         ref int a = ref n.GetNumRef();
         ref int b = ref r.GetRRef();
-        if (a == sl && !enemyList.IsUnityNull())
+        if (a <= sl && !enemyList.IsUnityNull())
         {
             score += 10;
             a = Random.Range(1, 5);
@@ -121,6 +121,7 @@ public class GenerateEnemy : MonoBehaviour
         if (health <= 0)
         {
             health = 3;
+            MakePose.posed-= KillEnemy;
             SceneManager.LoadScene(4);
             
         }

@@ -63,12 +63,14 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Num.cs" />
     <Compile Include="Assets\Script\Randomdown.cs" />
+    <Compile Include="Assets\Script\audioManager.cs" />
     <Compile Include="Assets\Script\Rand.cs" />
     <Compile Include="Assets\Script\Scene2.cs" />
     <Compile Include="Assets\Script\Scene3.cs" />
     <Compile Include="Assets\Script\generateEnemy.cs" />
     <Compile Include="Assets\Script\MakePose.cs" />
     <Compile Include="Assets\Script\Info.cs" />
+    <Compile Include="Assets\Script\audioEffect.cs" />
     <Compile Include="Assets\Script\GenePlayer.cs" />
     <Compile Include="Assets\Script\GetScore.cs" />
     <Compile Include="Assets\Script\Scene1.cs" />

@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Timeline.Actions;
+
 using UnityEngine;
 
 public class MakePose : MonoBehaviour
@@ -15,6 +15,7 @@ public class MakePose : MonoBehaviour
 
     public delegate bool OnSpaced(int a);//委托
     public static event OnSpaced posed;//事件
+    public static event OnSpaced audio;//事件
     public enum sorryList {  sorry0, sorry1, sorry2 , sorry3 , sorry4  };//枚举每种道歉状态
     Queue<sorryList> order;
     public sorryList sl;
@@ -47,18 +48,22 @@ public class MakePose : MonoBehaviour
             {
                 case float n when (n > 0 && n < 45):
                     sl = sorryList.sorry1;
+                    audio.Invoke((int)sl);
                     posed.Invoke((int)sl);
                     Debug.Log("すみません"); break;
                 case float n when (n > 45 && n < 90):
                     sl = sorryList.sorry2;
+                    audio.Invoke((int)sl);
                     posed.Invoke((int)sl);
                     Debug.Log("本当にすみません"); break;
                 case float n when (n > 90 && n < 135):
                     sl = sorryList.sorry3;
+                    audio.Invoke((int)sl);
                     posed.Invoke((int)sl);
                     Debug.Log("申し訳ありません"); break;
                 case float n when (n > 135 && n < 180):
                     sl = sorryList.sorry4;
+                    audio.Invoke((int)sl);
                     posed.Invoke((int)sl);
                     Debug.Log("申し訳ございません"); break;
                 default:
