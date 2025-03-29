@@ -48,7 +48,7 @@ public class GenerateEnemy : MonoBehaviour
        
     }
 
-    bool KillEnemy(int sl)
+    public bool KillEnemy(int sl)
     {
         ref int a = ref n.GetNumRef();
         ref int b = ref r.GetRRef();
