@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 //计时器
 public class Timer : MonoBehaviour
 {
+    public GenerateEnemy ge;
     [SerializeField] private float timer = 30f;//计时总时长为30秒
 
     public Text timerText;//组件
@@ -29,7 +30,8 @@ public class Timer : MonoBehaviour
         {
             isTimeOut = true;
             timerText.text = "0.0";//显示0.0，不再继续计时
-            SceneManager.LoadScene(3);//跳转到结束场景
+            SceneManager.LoadScene(4);//跳转到结束场景
+            MakePose.posed -= ge.KillEnemy;
         }
     }
 
@@ -53,6 +55,7 @@ public class Timer : MonoBehaviour
         if (canCilck)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            MakePose.posed -= ge.KillEnemy;
         }
     }
 

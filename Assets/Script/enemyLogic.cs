@@ -5,63 +5,77 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using static EnemyLogic;
 //thi
-public class enemyLogic : MonoBehaviour
+public class EnemyLogic : MonoBehaviour
 {
+
+
     public MakePose makePose;
-    public EventTrigger getScore;
-    public Sprite[] newSprites;
-    public enum Power { friend,workmate,leader,boss}
-    public Power power;
+    public MakePose.sorryList sl;
 
-    // Start is called before the first frame update
-    void Start()
-    {//生成上司时随机决定其身份
-        power = (Power)Random.Range(0, 3);
-        // 获取物体上的 SpriteRenderer 组件
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+    public Num n;
+    public Num r;
 
-        // 确保组件存在
-        if (spriteRenderer != null && newSprites != null)
-        {
-            // 更换为新的图片
-            spriteRenderer.sprite = newSprites[(int)power];
-        }
-        else
-        {
-            Debug.LogWarning("SpriteRenderer 或 newSprite 未设置！");
-        }
+    public Sprite Sprite1;
+    public Sprite Sprite2;
+    public Sprite Sprite3;
+    public Sprite Sprite4;
+    public Sprite Sprite5;
+    public Sprite Sprite6;
+    public Sprite Sprite7;
+    public Sprite Sprite8;
 
-        switch (power)
-        {
-            case Power.friend:
-                gameObject.GetComponent<Sprite>();
-                break;
-            case Power.workmate:
-                break;
-            case Power.leader:
-                break;
-            case Power.boss:
-                break;
-            default:
-            break;
-        }
-        if (makePose != null)
-        {
-        }
-        MakePose.posed += addScore;
-    }
-    // Update is called once per frame
-    void Update()
+    private SpriteRenderer spriteRenderer;
+
+
+    private void Start()
     {
-        
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    public bool addScore(int sl)
+
+    private void Update()
     {
-        if ((int)power == sl)
-        {
-            Destroy(gameObject);
-        }
-            return (int)power == sl;
+        UpdateSprite();
     }
+
+    private void UpdateSprite()
+    {
+        ref int a = ref n.GetNumRef();
+        ref int b = ref r.GetRRef();
+        switch (a)
+        {
+            case 1:
+                if (b == 0)
+                    spriteRenderer.sprite = Sprite1;
+                else
+                    spriteRenderer.sprite = Sprite5;
+
+                break;
+            case 2:
+                if (b == 0)
+                    spriteRenderer.sprite = Sprite2;
+                else
+                    spriteRenderer.sprite = Sprite6;
+                break;
+
+            case 3:
+                if (b == 0)
+                    spriteRenderer.sprite = Sprite3;
+                else
+                    spriteRenderer.sprite = Sprite7;
+                break;
+
+            case 4:
+                if (b == 0)
+                    spriteRenderer.sprite = Sprite4;
+                else
+                    spriteRenderer.sprite = Sprite8;
+                break;
+        }
+    }
+
+
+
 }

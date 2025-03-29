@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3149690372549614819}
   - component: {fileID: 2206081855585752544}
-  - component: {fileID: 7474826898247896549}
+  - component: {fileID: 2885649242375030515}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 5, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7474826898247896549
+--- !u!114 &2885649242375030515
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,14 +96,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7432968763725525531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68f273470d77dae4fbf5790704779864, type: 3}
+  m_Script: {fileID: 11500000, guid: 37b454bda83881c40b689209939c3080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   makePose: {fileID: 0}
   getScore: {fileID: 0}
-  newSprites:
-  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  power: 0
+  n: {fileID: 0}
+  Sprite1: {fileID: 5744780374460999365, guid: fdb1cc2c3541cfc419672ab1bfd8b2d2, type: 3}
+  Sprite2: {fileID: 3832503875003733931, guid: fb6238d4a06304347b1ac9a05b64bf10, type: 3}
+  Sprite3: {fileID: 3676510476207127891, guid: a85a11d3917804f4aaf2d9323c933e4a, type: 3}
+  Sprite4: {fileID: 2168423810454027315, guid: d4032a0262f660a49b80237a64daf5b0, type: 3}
